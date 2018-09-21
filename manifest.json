@@ -1,0 +1,19 @@
+{
+    "name": "百度搜索广告清理",
+    "version": "3.1415926",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.baidu.com/*",
+                "http://www.baidu.com/*"
+            ],
+            "js":["ClearAdv.js"]
+        }
+    ],
+    "permissions":
+    [
+        "http://www.baidu.com/*",
+        "https://www.baidu.com/*"
+    ]
+}
