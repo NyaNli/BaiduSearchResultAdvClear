@@ -5,10 +5,11 @@
     "content_scripts":[
         {
             "matches":[
-                "https://www.baidu.com/*",
-                "http://www.baidu.com/*"
+                "https://www.baidu.com/s?*",
+                "http://www.baidu.com/s?*"
             ],
-            "js":["ClearAdv.js"]
+            "js":["ClearAdv.js"],
+            "run_at": "document_start"
         }
     ],
     "permissions":
